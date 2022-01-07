@@ -10,7 +10,6 @@ def aproksymujLicznik(listaOtwarta):
         wiersze_niepuste = list(filter(lambda item: item.odczyt != None, podzielniki_uzytkownika))
         mianownik = sum(c.wspolczynnik for c in wiersze_niepuste)
         srednia_wazona = sum(wiersze_niepuste[g].odczyt * wiersze_niepuste[g].wspolczynnik / mianownik for g in range(len(wiersze_niepuste)))
-        print(srednia_wazona)
         funkcja = wynik_liczenia(wiersz_uzytkownika.nr_uzytkownika, wiersz_uzytkownika.numer_podz, wiersz_uzytkownika.wspolczynnik, srednia_wazona, wiersz_uzytkownika.uwagi)
         lista_wynikow.append(funkcja)
     return lista_wynikow
