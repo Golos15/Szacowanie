@@ -1,7 +1,9 @@
 from wynik_liczenia import wynik_liczenia
 from zwracacz import aproksymujLicznik
+from wczytywacz import wczytaj
 
-parametry_wejsciowe = [wynik_liczenia(1, 2, 3), wynik_liczenia(4, 5, 6)]
+parametry_wejsciowe = wczytaj()
 wyniki = aproksymujLicznik(parametry_wejsciowe)
 for wynik in wyniki:
-    print (wynik.numer_podz, wynik.wspolczynnik, wynik.odczyt)
+    print(wynik)
+
